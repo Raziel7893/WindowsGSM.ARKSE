@@ -18,10 +18,10 @@
 🗃️ Didn't find any documentation yet. Please Let me know if you came accros one
 
 ### The Game
-🕹️ https://store.steampowered.com/app/768200/ARKSE_Survive_the_Wilds/
+🕹️ https://store.steampowered.com/app/346110/ARK_Survival_Evolved/
 
 ### Dedicated server info
-🖥️ https://steamdb.info/app/808040/info/
+🖥️ https://steamdb.info/app/376030/info/
 
 ### Port Forwarding (YOU NEED THIS, TO BE ABLE TO CONNECT FROM THE INTERNET(only for servers/pcs at home):
 - If You don't know How: Google: YourRouterBrand + Portforwarding
@@ -37,42 +37,11 @@
 
 ### Available Params
 All these params are automatically set by WGSM
-- -port=8211                    can be change and working (Change via WGSM settings)
-- -servername=""                can override via Server Start Param box (WGSM Edit button)
-- -serverdescription=""         can override via Server Start Param box (WGSM Edit button)
-- #-NOSTEAM                      Suggested StartParameters from the default start script, not sure what it does, changes nothing, so it is skipped by default. Maybe there is an update on release for it (cann be added in Additional Parameters)
-- -log                          creates logfiles in serverId\serverfiles\ARKSE\Saved\Logs
-
-### Config Guide
-I Created A configFile to set world-parameters(Including Password) to not clutter the AdditionalParameter Box and dueto strange format of the Start Parameters
-Go to serverId\serverfiles\ARKSE_conf.json and edit it with your preffered text Editior. 
-- "Password": "",                       Locks Server behind a password promt
-- "FriendlyFire": false,                Friendly fire between players
-- "PeacefullMode": false,               
-- "KeepInventory": false,               Keep inventory on death
-- "NoDeterioration": false,             Disable building wather deterioration
-- "Private": false,                     Private server is hidden on the server browser (Not possible yet, as there is no way to connect without the ServerBrowser)
-- "LengthOfDaySeconds": 1800,           Length of day in seconds (default is 1800 which is 30 minutess)
-- "LengthOfSeasonSeconds": 10800,       Length of season in seconds (default is 10800 which is 3 hours)
-- "CreatureHealthModifier": 100,        Creature health modifier (20-300 default is 100)
-- "CreatureDamageModifier": 100,        Creature damage modifier (20-300 default is 100)
-- "NourishmentLossModifier": 100,       Nourishment loss modifier (0-100 default is 100)
-- "FalldamageModifier": 100,            Fall damage modifier (50-100 default is 100)
-
-The last 4 Options are copied from the shipped Start-Script(serverfiles/start-server.bat) on install. They are apperantly mandatory, so the should not be changed
-- "DeploymentId": "50f2b148496e4cbbbdeefbecc2ccd6a3",
-- "ClientId": "xyza78918KT08TkA6emolUay8yhvAAy2",
-- "ClientSecret": "aN2GtVw7aHb6hx66HwohNM+qktFaO3vtrLSbGdTzZWk",
-- "PrivateKey": ""
-
-### Connecting on a locked server (with password)
-For now only Connecting via a the ingame serverbrowser is possible. It is recommended to note down the 5 Options after password and filter your servers accordingly (as there is no name filter either)
-- On the left of the join window be sure to click public (not official)
-- On the lower part choose your options to filter down the list of servers
-- Be sure to favour your server, so they should show up under Favorites on the next time
-
-### Other notes
-- The game is currently in Early Access Stage WGSM and this plugin is not taking liability if something happens to your server, the app is only for managing your server easily
+- ?Port=7777      		              can be change and working (Change via WGSM settings)
+- ?QueryPort=27015                    can be change and working (Change via WGSM settings)
+- ?SessionName=""     	              can override via Server Name Param box (WGSM Edit button)
+- ?MultiHome=""     	              can override via Server IP Param box (WGSM Edit button)
+- -server -log                        creates logfiles in serverId\serverfiles\ARKSE\Saved\Logs
 
 ### Not having an full IPv4 adress ( named CCNAT or DSL Light )
 No game or gameserver supports ipv6 only connections. 
