@@ -25,7 +25,7 @@ namespace WindowsGSM.Plugins
         public override bool loginAnonymous => true;
         public override string AppId => "376030"; // Game server appId Steam
         public string FullName = "ARK: Survival Evolved Dedicated Server";
-        public string StartPath = @"ShooterGame\Binaries\Win64\ShooterGameServer.exe";
+        public override string StartPath => @"ShooterGame\Binaries\Win64\ShooterGameServer.exe";
 
         // - Standard Constructor and properties
         public ARKSE(ServerConfig serverData) : base(serverData) => base.serverData = serverData;
